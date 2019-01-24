@@ -1,0 +1,72 @@
+//UIKit reset
+
+//Re-Init
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6 {
+  font-family: @font-family-global;
+}
+
+//Global
+
+//Backgrounds
+
+.uk-background-primary {
+  background-color: @bg-global-primary;
+}
+
+.uk-background-secondary {
+  background-color: @bg-global-secondary;
+}
+
+.uk-background-default {
+  background-color: @bg-global-default;
+}
+
+.uk-background-muted {
+  background-color: @bg-global-muted;
+}
+
+//Buttons
+
+.uk-button {
+  font-size: @font-size-small;
+  border-radius: 3px;
+}
+
+.uk-button-primary {
+  background-color: @bg-button-primary;
+
+  &:hover, &:focus, &:active {
+    background-color: darken(@bg-button-primary, 20%);
+  }
+}
+
+//Optional
+
+.uk-navbar-item,
+.uk-navbar-nav > li > a,
+.uk-navbar-toggle {
+  font-family: @font-family-global;
+}
+
+//Local
+
+.uk-logo {
+  font-family: @font-family-logo;
+  color: @font-color-global;
+  font-size: 25px;
+
+  &:hover, &:focus, &:active {
+    color: @font-color-global;
+  }
+
+  span {
+    color: @font-color-secondary;
+  }
+}
+
+header {
+  .uk-logo {
+    font-size: 35px;
+    text-shadow: 0px 1px 3px rgba(39, 39, 39, 0.34);
+  }
+}
