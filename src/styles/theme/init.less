@@ -1,5 +1,10 @@
 html {
-  background-color: @bg-global;
+  background-image: url("/images/bg-global.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: cover;
+  background-color: @bg-global-primary;
+  //background-blend-mode: multiply;
   font-family: @font-family-global;
   font-weight: @font-weight-normal;
   font-size: @font-size-global;
@@ -13,14 +18,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: @font-size-header-main;
+  color: @font-color-global;
+  margin: 8px 0;
 }
 
 h2 {
-  font-size: @font-size-header-large;
+
 }
 
 h3 {
   font-size: @font-size-header-global;
+  color: @font-color-global;
 }
 
 h4 {
@@ -36,7 +44,7 @@ h5 {
 }
 
 h6 {
-  font-size: @font-size-header-small;
+
 }
 
 .tm-background-tertiary {

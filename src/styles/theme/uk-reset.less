@@ -30,6 +30,8 @@
 .uk-button {
   font-size: @font-size-small;
   border-radius: 3px;
+  padding: 0 5px;
+  line-height: 47px;
 }
 
 .uk-button-primary {
@@ -40,12 +42,25 @@
   }
 }
 
+
 //Optional
 
 .uk-navbar-item,
 .uk-navbar-nav > li > a,
 .uk-navbar-toggle {
   font-family: @font-family-global;
+  font-size: @font-size-large;
+  color: @font-color-global;
+  text-transform: none;
+
+  &:hover, &:focus, &:active {
+    color: @font-color-global;
+  }
+
+  .fa {
+    color: @font-color-primary;
+    font-size: 24px;
+  }
 }
 
 //Local
@@ -54,6 +69,7 @@
   font-family: @font-family-logo;
   color: @font-color-global;
   font-size: 25px;
+  font-weight: @font-weight-bold;
 
   &:hover, &:focus, &:active {
     color: @font-color-global;
@@ -67,6 +83,6 @@
 header {
   .uk-logo {
     font-size: 35px;
-    text-shadow: 0px 1px 3px rgba(39, 39, 39, 0.34);
+    text-shadow: 0 1px 3px rgba(39, 39, 39, 0.34);
   }
 }
