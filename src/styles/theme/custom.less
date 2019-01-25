@@ -192,6 +192,80 @@ ol.tm-ordered-list {
   }
 }
 
+.tm-games-available {
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .fa {
+    font-size: 17px;
+    color: @font-color-primary;
+  }
+
+  .select2-container--default .select2-selection--single {
+    background-color: #192745;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    line-height: 20px;
+    max-height: 22px;
+    outline: none;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: @font-color-default;
+    line-height: 20px;
+  }
+
+  .select2-container {
+    box-sizing: border-box;
+    display: inline;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+  }
+
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: -1px;
+    left: 75px;
+    /* right: 0; */
+    width: 20px;
+    font-family: FontAwesome;
+    color: @font-color-default;
+    font-size: 10px;
+
+    b {
+      display: none;
+    }
+
+    &:before {
+      content: '\f078';
+    }
+  }
+
+  .tm-select {
+    width: 96px;
+    margin-right: 5px;
+  }
+}
+
+.select2-dropdown {
+  border: 1px solid #192745;
+  border-radius: 3px;
+}
+
+.select2-results {
+  display: block;
+  background-color: #192745;
+  color: @font-color-default;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: lighten(#192745,30%);
+  color: white;
+}
 
 .tm-game-available {
   padding: 10px;
