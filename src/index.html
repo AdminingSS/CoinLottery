@@ -202,7 +202,7 @@
                             </div>
                         </div>
                         <div class="tm-child-margin-bottom" >
-                            <div class="tm-background-tertiary">
+                            <div class="uk-hidden tm-background-tertiary">
                                 <div class="tm-background-central-head tm-block-padding uk-flex uk-flex-center">
                                     <div>
                                         <h4>Текущая игра</h4>
@@ -265,7 +265,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                                <li class="uk-background-primary">
+                                                <li class="uk-background-primary uk-active">
                                                     <div class="uk-flex uk-flex-between uk-flex-middle">
                                                         <div class="uk-width-4-5 uk-text-truncate">
                                                             0x6C177545645ygdfgb6jfgjn6t65j235235b8
@@ -366,17 +366,34 @@
                                                 </div>
                                             </div>
 
-                                            <div class="tm-game-counter uk-hidden uk-background-primary uk-text-center uk-flex uk-flex-column uk-flex-between">
+                                            <div class="uk-hidden tm-game-counter uk-background-primary uk-text-center uk-flex uk-flex-column uk-flex-between">
                                                 <img class="uk-margin-auto" src="/images/players-waiting.png" alt="">
                                                 <div class="tm-slidebar"></div>
                                                 <div class="tm-waiting-players uk-width-auto uk-margin-auto">Ожидаем
                                                     игроков
                                                 </div>
                                             </div>
-                                            <div class="tm-game-counter uk-background-primary uk-text-center uk-flex uk-flex-column uk-flex-between">
+                                            <div class="uk-hidden tm-game-counter uk-background-primary uk-text-center uk-flex uk-flex-column uk-flex-between">
+                                                <img class="uk-margin-auto" src="/images/computing-winner.png" alt="">
+                                                <div class="tm-slidebar"></div>
+                                                <div class="tm-waiting-players uk-width-auto uk-margin-auto">Определение победителя
+                                                </div>
+                                            </div>
+                                            <div class="uk-hidden tm-game-counter uk-background-primary uk-text-center uk-flex uk-flex-column uk-flex-between">
                                                 <div class="uk-flex uk-flex-middle uk-margin-bottom uk-margin-small-top">
                                                     <div class="tm-win-number">3</div>
                                                     <div class="tm-win-number">8</div>
+                                                    <div class="tm-win-number">4</div>
+                                                    <div class="tm-win-number">9</div>
+                                                </div>
+
+                                                <div class="tm-waiting-players uk-width-auto uk-margin-auto">Победители
+                                                </div>
+                                            </div>
+                                            <div class="tm-game-counter uk-background-primary uk-text-center uk-flex uk-flex-column uk-flex-between">
+                                                <div class="uk-flex uk-flex-middle uk-margin-bottom uk-margin-small-top">
+                                                    <div class="tm-win-number">5</div>
+                                                    <div class="tm-win-number">1</div>
                                                     <div class="tm-win-number">4</div>
                                                     <div class="tm-win-number">9</div>
                                                 </div>
@@ -416,8 +433,11 @@
                                                 <button class="uk-hidden tm-button-bet uk-button uk-button-primary uk-width-expand">
                                                     Сделать ставку
                                                 </button>
-                                                <button class="tm-button-bet uk-button uk-button-secondary uk-width-expand">
-                                                    <i class="fa fa-minus-circle" aria-hidden="true"></i> К сожалению! Вы не угадали
+                                                <button class="uk-hidden tm-button-bet uk-button uk-button-secondary uk-width-expand">
+                                                    <i class="fa fa-minus-circle uk-margin-small-right" aria-hidden="true"></i> К сожалению! Вы не угадали
+                                                </button>
+                                                <button class="tm-button-bet uk-button uk-button-primary uk-width-expand">
+                                                    <i class="fa fa-plus-circle uk-margin-small-right" aria-hidden="true"></i> Ура! Вы выиграли <span class="uk-text-uppercase">0.95 eth</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -441,7 +461,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tm-games-available uk-background-secondary">
+                            <div class="uk-hidden tm-games-available uk-background-secondary">
                                 <div class="tm-background-tertiary tm-block-padding uk-flex uk-flex-between">
                                     <h5>ДОступные игры</h5>
                                     <div class="uk-flex uk-flex-middle">
@@ -462,6 +482,256 @@
                                     </div>
                                 </div>
                                 <div class="tm-block-padding">
+                                    <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">
+                                                <div class="uk-width-1-2">
+                                                    0.0569 <span class="uk-text-uppercase">eth</span>
+                                                </div>
+                                                <div class="tm-icon">
+                                                    5/10
+                                                </div>
+                                                <button class="uk-button uk-button-primary uk-margin-left">
+                                                    Войти
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tm-games-available uk-background-secondary">
+                                <div class="tm-background-tertiary tm-block-padding uk-flex uk-flex-center">
+                                    <h4>Все игры</h4>
+                                </div>
+                                <div class="tm-block-padding">
+                                    <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+                                        <div class="uk-flex">
+                                            <div class="uk-flex uk-width-1-2 uk-flex-middle">
+                                                <h5>Доступно игр:</h5>
+                                                <div class="uk-margin-small-left">150</div>
+                                            </div>
+                                            <div class="uk-flex uk-width-1-2 uk-flex-middle">
+                                                <h5>Игроков:</h5>
+                                                <div class="uk-margin-small-left">654</div>
+                                            </div>
+                                        </div>
+                                        <div class="uk-flex uk-flex-right uk-flex-middle">
+                                            <h5>Общая сумма операций:</h5>
+                                            <div class="uk-margin-small-left">1050.0569 <span class="uk-text-uppercase">eth</span></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-hidden tm-find-game">
+                                        <div class="uk-flex uk-flex-middle uk-child-width-1-4 uk-flex-wrap uk-flex-between">
+                                            <div>
+
+                                            </div>
+                                            <div>
+                                                <h6>Игроки</h6>
+                                            </div>
+                                            <div>
+                                                <h6>Ставка eth</h6>
+                                            </div>
+                                            <div class="uk-width-1-5">
+
+                                            </div>
+
+                                            <div>
+                                                <h2>Подбор игр</h2>
+                                            </div>
+                                            <div class="uk-flex">
+                                                <input class="uk-margin-small-right" type="text" placeholder="от">
+                                                <input type="text" placeholder="до">
+                                            </div>
+                                            <div class="uk-flex">
+                                                <input class="uk-margin-small-right" type="text " placeholder="от">
+                                                <input type="text" placeholder="до">
+                                            </div>
+                                            <div class="uk-width-1-5 uk-flex uk-flex-right">
+                                                <button class="tm-button-new-game uk-button">Найти</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-hidden uk-margin-bottom">
+                                        Нету подходящей игры? <a class="tm-create uk-margin-small-left" href="#">Создайте новую</a>
+                                    </div>
+
+                                    <div class="tm-new-game">
+                                        <div class="uk-flex uk-flex-middle uk-child-width-1-4 uk-flex-wrap uk-flex-between">
+                                            <div>
+
+                                            </div>
+                                            <div>
+                                                <h6>Игроки</h6>
+                                            </div>
+                                            <div>
+                                                <h6>Ставка eth</h6>
+                                            </div>
+                                            <div class="uk-width-1-5">
+
+                                            </div>
+
+                                            <div>
+                                                <h2>Новая игра</h2>
+                                            </div>
+                                            <div>
+                                                <input type="text" placeholder="10">
+                                            </div>
+                                            <div>
+                                                <input type="text" placeholder="0,0569">
+                                            </div>
+                                            <div class="uk-width-1-5 uk-flex uk-flex-right">
+                                                <button class="tm-button-new-game uk-button">Создать</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin-bottom">
+                                        Игры с такими параметрами уже созданы, вы можете присоединиться к ним!
+                                    </div>
+
                                     <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
                                         <div>
                                             <div class="tm-game-available uk-background-primary uk-flex uk-flex-between uk-flex-middle">

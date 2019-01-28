@@ -26,6 +26,10 @@ h1 {
   color: #ffffff;
   margin: 8px 0;
 }
+h2 {
+  font-size: 25px;
+  color: #ffffff;
+}
 h3 {
   font-size: 20px;
   color: #ffffff;
@@ -39,6 +43,11 @@ h5 {
   font-size: 14px;
   text-transform: uppercase;
   color: #879ac2;
+}
+h6 {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
 }
 .tm-background-tertiary {
   background-color: #323e59;
@@ -388,6 +397,20 @@ ol.tm-ordered-list > li span {
 .tm-players-list li:first-child {
   margin-top: 0;
 }
+.tm-players-list li.uk-active:after {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 3px;
+  background-color: #289c5c;
+  content: '';
+}
+.tm-players-list li.uk-active .tm-players-count {
+  background-color: #289c5c;
+  border-color: #289c5c;
+}
 .tm-players-list .tm-players-count {
   width: 23px;
   height: 23px;
@@ -546,16 +569,6 @@ ol.tm-ordered-list > li span {
 .tm-game-action .tm-paginator-button:hover {
   background-color: #289c5c;
 }
-.tm-game-action input {
-  background-color: #192745;
-  width: 55px;
-  height: 35px;
-  border: none;
-  border-radius: 3px;
-  text-align: center;
-  font-size: 23px;
-  color: #ffffff;
-}
 .tm-input-footer {
   width: 100%;
 }
@@ -577,5 +590,58 @@ ol.tm-ordered-list > li span {
 }
 .tm-win-number:last-child {
   margin-right: 0;
+}
+.tm-find-game,
+.tm-new-game {
+  background-color: #289c5c;
+  margin: 10px 0 20px;
+  padding: 15px 15px 25px 20px;
+  border-radius: 3px;
+}
+.tm-find-game input {
+  background-color: #ffffff;
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(25, 38, 67, 0.5);
+}
+.tm-find-game input::placeholder {
+  color: rgba(25, 38, 67, 0.5);
+  font-size: 12px;
+}
+.tm-new-game input {
+  background-color: #ffffff;
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(25, 38, 67, 0.5);
+}
+.tm-new-game input::placeholder {
+  color: rgba(25, 38, 67, 0.5);
+  font-size: 12px;
+}
+.tm-button-new-game {
+  height: 29px;
+  line-height: 29px;
+  padding: 0 35px;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.tm-button-new-game:hover,
+.tm-button-new-game:active {
+  border-color: #bbb;
+  color: #bbb;
+}
+a.tm-create {
+  color: #289c5c;
+}
+a.tm-create:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -298,6 +298,24 @@ ol.tm-ordered-list {
     &:first-child {
       margin-top: 0;
     }
+
+    &.uk-active {
+      &:after {
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 3px;
+        background-color: @bg-button-primary;
+        content: '';
+      }
+
+      .tm-players-count {
+        background-color: @bg-button-primary;
+        border-color: @bg-button-primary;
+      }
+    }
   }
 
   .tm-players-count {
@@ -487,17 +505,6 @@ ol.tm-ordered-list {
       background-color: @bg-button-primary;
     }
   }
-  
-  input {
-    background-color: #192745;
-    width: 55px;
-    height: 35px;
-    border: none;
-    border-radius: 3px;
-    text-align: center;
-    font-size: 23px;
-    color: @font-color-global;
-  }
 
 }
 
@@ -525,5 +532,70 @@ ol.tm-ordered-list {
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.tm-find-game, .tm-new-game {
+  background-color: @bg-button-primary;
+  margin: 10px 0 20px;
+  padding: 15px 15px 25px 20px;
+  border-radius: 3px;
+}
+
+.tm-find-game {
+  input {
+    background-color: @bg-global;
+    width: 60px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(25, 38, 67, 0.5);
+
+    &::placeholder {
+      color: rgba(25, 38, 67, 0.5);
+      font-size: 12px;
+    }
+  }
+}
+
+.tm-new-game {
+
+  input {
+    background-color: @bg-global;
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(25, 38, 67, 0.5);
+
+    &::placeholder {
+      color: rgba(25, 38, 67, 0.5);
+      font-size: 12px;
+    }
+  }
+}
+
+.tm-button-new-game {
+  height: 29px;
+  line-height: 29px;
+  padding: 0 35px;
+  background-color: transparent;
+  border: 1px solid #fff;
+
+  &:hover, &:active {
+    border-color: #bbb;
+    color: #bbb;
+  }
+}
+
+a.tm-create {
+  color: @font-color-primary;
+
+  &:hover {
+    text-decoration: none;
   }
 }
