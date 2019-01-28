@@ -7,6 +7,14 @@
 
 //Global
 
+.uk-grid-small {
+  margin-left: -20px;
+}
+
+.uk-grid-small>* {
+  padding-left: 20px;
+}
+
 //Backgrounds
 
 .uk-background-primary {
@@ -43,7 +51,7 @@
 }
 
 
-//Optional
+//Local
 
 .uk-navbar-item,
 .uk-navbar-nav > li > a,
@@ -58,12 +66,10 @@
   }
 
   .fa {
-    color: @font-color-primary;
+    color: @font-color-default;
     font-size: 24px;
   }
 }
-
-//Local
 
 .uk-logo {
   font-family: @font-family-logo;
@@ -76,7 +82,7 @@
   }
 
   span {
-    color: @font-color-secondary;
+    color: @font-color-primary;
   }
 }
 
