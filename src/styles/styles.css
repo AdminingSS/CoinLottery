@@ -27,7 +27,7 @@ h1 {
   margin: 8px 0;
 }
 h3 {
-  font-size: 19px;
+  font-size: 20px;
   color: #ffffff;
 }
 h4 {
@@ -51,11 +51,17 @@ h5 {
 .uk-h6 {
   font-family: 'Roboto', sans-serif;
 }
+.uk-container {
+  padding: 0;
+}
 .uk-grid-small {
   margin-left: -20px;
 }
 .uk-grid-small > * {
   padding-left: 20px;
+}
+.uk-text-large {
+  font-size: 16px;
 }
 .uk-background-primary {
   background-color: #475679;
@@ -74,6 +80,7 @@ h5 {
   border-radius: 3px;
   padding: 0 5px;
   line-height: 47px;
+  white-space: nowrap;
 }
 .uk-button-primary {
   background-color: #289c5c;
@@ -82,6 +89,28 @@ h5 {
 .uk-button-primary:focus,
 .uk-button-primary:active {
   background-color: #134b2c;
+}
+.uk-button-secondary {
+  background-color: #be663a;
+}
+.uk-button-secondary:hover,
+.uk-button-secondary:focus,
+.uk-button-secondary:active {
+  background-color: #703c22;
+}
+.uk-button-default {
+  background-color: #475679;
+  color: #ffffff;
+}
+.uk-button-default:hover,
+.uk-button-default:focus,
+.uk-button-default:active {
+  background-color: #3e4b69;
+  color: #ffffff;
+}
+.uk-pagination {
+  flex-wrap: nowrap;
+  margin: 0;
 }
 .uk-navbar-item,
 .uk-navbar-nav > li > a,
@@ -145,6 +174,11 @@ header .uk-logo {
   font-size: 28px;
   content: "\F1A1";
 }
+.tm-la.fa-reply:before {
+  font-size: 17px;
+  color: #ffffff;
+  content: "\F2DA";
+}
 .tm-padding-small-bottom {
   padding-bottom: 10px;
 }
@@ -165,7 +199,7 @@ header .uk-logo {
 }
 ol.tm-ordered-list {
   margin: 0;
-  padding-bottom: 20px;
+  padding: 12px 5px 20px 30px;
 }
 ol.tm-ordered-list > li {
   position: relative;
@@ -194,11 +228,11 @@ ol.tm-ordered-list > li span {
   white-space: nowrap;
 }
 .tm-block-footer {
+  min-height: 59px;
   padding: 15px 0 0;
   border-top: 1px solid rgba(135, 154, 194, 0.2);
 }
 .tm-block-footer a {
-  font-size: 16px;
   color: #ffffff;
 }
 .tm-block-footer a:hover {
@@ -230,6 +264,7 @@ ol.tm-ordered-list > li span {
   text-transform: none;
   font-size: 15px;
   padding: 0 25px;
+  line-height: 38px;
 }
 .tm-button-bet {
   text-transform: none;
@@ -240,12 +275,13 @@ ol.tm-ordered-list > li span {
   height: 35px;
   min-height: 35px;
   border-radius: 50%;
-  background-color: #366371;
+  background-color: transparent;
   margin-right: 5px;
+  border: 2px solid #475679;
 }
 .tm-social-icons > li > a .fa {
   font-size: 17px;
-  color: #879ac2;
+  color: #ffffff;
 }
 .tm-statistic {
   font-size: 26px;
@@ -262,7 +298,8 @@ ol.tm-ordered-list > li span {
 }
 .tm-game-my {
   position: relative;
-  padding: 15px 20px;
+  padding: 0 20px;
+  line-height: 41px;
   border: none;
   border-top: 1px solid #323e59;
   background-color: rgba(71, 86, 121, 0.5);
@@ -290,6 +327,18 @@ ol.tm-ordered-list > li span {
 .tm-game-my:nth-child(2) {
   border-top: none;
 }
+.tm-game-played {
+  position: relative;
+  padding: 0 20px;
+  line-height: 44px;
+  border: none;
+  border-top: 1px solid #323e59;
+  background-color: rgba(71, 86, 121, 0.5);
+  cursor: pointer;
+}
+.tm-game-played:nth-child(2) {
+  border-top: none;
+}
 .tm-members-list {
   padding: 0;
   margin: 0;
@@ -303,19 +352,21 @@ ol.tm-ordered-list > li span {
   border-top: 1px solid #475679;
   margin-top: 0;
 }
+.tm-side-limit > * {
+  max-width: 236px;
+}
 .tm-players-list {
   padding: 0;
   margin: 0;
 }
 .tm-players-list li {
   position: relative;
-  padding: 0 0 0 40px;
+  padding: 0 10px 0 40px;
   line-height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-top: 2px solid #323e59;
-  margin-top: 0;
+  margin-top: 5px;
 }
 .tm-players-list li.tm-not-connected {
   color: #879ac2;
@@ -330,12 +381,19 @@ ol.tm-ordered-list > li span {
   line-height: inherit;
   font-family: FontAwesome;
   font-size: 21px;
-  color: #ffffff;
+  color: #879ac2;
   content: "\f364";
   left: 10px;
 }
 .tm-players-list li:first-child {
-  border-top: none;
+  margin-top: 0;
+}
+.tm-players-list .tm-players-count {
+  width: 23px;
+  height: 23px;
+  border: 1px solid #323e59;
+  text-align: center;
+  line-height: 23px;
 }
 .tm-games-available a:hover {
   text-decoration: none;
@@ -349,12 +407,13 @@ ol.tm-ordered-list > li span {
   border: 1px solid transparent;
   border-radius: 3px;
   line-height: 20px;
-  max-height: 22px;
+  max-height: 19px;
   outline: none;
 }
 .tm-games-available .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #919bb1;
   line-height: 20px;
+  text-transform: uppercase;
 }
 .tm-games-available .select2-container {
   box-sizing: border-box;
@@ -383,6 +442,9 @@ ol.tm-ordered-list > li span {
 .tm-games-available .tm-select {
   width: 96px;
   margin-right: 5px;
+}
+.tm-games-available .tm-select:last-child {
+  margin-right: 0;
 }
 .select2-dropdown {
   border: 1px solid #192745;
@@ -421,15 +483,32 @@ ol.tm-ordered-list > li span {
   content: "\F369";
 }
 .tm-game-counter {
-  padding: 30px;
-  border-bottom: 2px solid #323e59;
+  padding: 28px;
+  margin-bottom: 5px;
+}
+.tm-game-counter .tm-slidebar {
+  position: relative;
+  margin: 15px 0 25px;
+  width: 100%;
+  height: 9px;
+  background-color: #323e59;
+}
+.tm-game-counter .tm-slidebar:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 35px;
+  width: 60px;
+  background-color: #289c5c;
+  border-radius: 500px;
+  content: '';
 }
 .tm-game-counter .tm-waiting-players {
   position: relative;
-  padding: 0 15px;
-  font-size: 16px;
+  padding: 0 25px;
+  font-size: 20px;
   color: #879ac2;
-  opacity: 0.7;
 }
 .tm-game-counter .tm-waiting-players:before,
 .tm-game-counter .tm-waiting-players:after {
@@ -448,7 +527,24 @@ ol.tm-ordered-list > li span {
   right: 0;
 }
 .tm-game-action {
-  padding: 30px 20px 20px;
+  padding: 25px 20px 20px;
+}
+.tm-game-action .tm-paginator-button {
+  width: 34px;
+  height: 35px;
+  line-height: 35px;
+  background: #192745;
+  padding: 0;
+  margin: 0 2px 0 0;
+  border-radius: 3px;
+  color: #ffffff;
+}
+.tm-game-action .tm-paginator-button:last-child {
+  margin: 0;
+}
+.tm-game-action .tm-paginator-button.uk-active,
+.tm-game-action .tm-paginator-button:hover {
+  background-color: #289c5c;
 }
 .tm-game-action input {
   background-color: #192745;
@@ -460,7 +556,13 @@ ol.tm-ordered-list > li span {
   font-size: 23px;
   color: #ffffff;
 }
-.tm-game-action .tm-border-top {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+.tm-input-footer {
+  width: 100%;
+}
+.tm-button-footer {
+  height: 27px;
+  padding: 0 20px;
+  line-height: 29px;
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */

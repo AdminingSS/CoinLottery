@@ -7,12 +7,20 @@
 
 //Global
 
+.uk-container {
+  padding: 0;
+}
+
 .uk-grid-small {
   margin-left: -20px;
 }
 
 .uk-grid-small>* {
   padding-left: 20px;
+}
+
+.uk-text-large {
+  font-size: @font-size-large;
 }
 
 //Backgrounds
@@ -40,6 +48,7 @@
   border-radius: 3px;
   padding: 0 5px;
   line-height: 47px;
+  white-space: nowrap;
 }
 
 .uk-button-primary {
@@ -50,8 +59,30 @@
   }
 }
 
+.uk-button-secondary {
+  background-color: @bg-button-secondary;
+
+  &:hover, &:focus, &:active {
+    background-color: darken(@bg-button-secondary, 20%);
+  }
+}
+
+.uk-button-default {
+  background-color: @bg-button-default;
+  color: @font-color-global;
+
+  &:hover, &:focus, &:active {
+    background-color: darken(@bg-button-default, 5%);
+    color: @font-color-global;
+  }
+}
+
 
 //Local
+.uk-pagination {
+  flex-wrap: nowrap;
+  margin: 0;
+}
 
 .uk-navbar-item,
 .uk-navbar-nav > li > a,
