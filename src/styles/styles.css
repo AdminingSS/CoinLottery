@@ -565,4 +565,17 @@ ol.tm-ordered-list > li span {
   line-height: 29px;
   border: none;
 }
+.tm-win-number {
+  width: 80px;
+  height: 105px;
+  line-height: 105px;
+  margin-right: 4px;
+  background-color: #192745;
+  border: 3px solid #289c5c;
+  border-radius: 10px;
+  font-size: 61px;
+}
+.tm-win-number:last-child {
+  margin-right: 0;
+}
 /*# sourceMappingURL=styles.css.map */
