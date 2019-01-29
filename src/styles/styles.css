@@ -60,15 +60,6 @@ h6 {
 .uk-h6 {
   font-family: 'Roboto', sans-serif;
 }
-.uk-container {
-  padding: 0;
-}
-.uk-grid-small {
-  margin-left: -20px;
-}
-.uk-grid-small > * {
-  padding-left: 20px;
-}
 .uk-text-large {
   font-size: 16px;
 }
@@ -118,7 +109,6 @@ h6 {
   color: #ffffff;
 }
 .uk-pagination {
-  flex-wrap: nowrap;
   margin: 0;
 }
 .uk-navbar-item,
@@ -195,10 +185,10 @@ header .uk-logo {
   padding: 10px 0;
 }
 .tm-block-padding {
-  padding: 10px 20px;
+  padding: 10px 15px;
 }
 .tm-block-padding-large {
-  padding: 20px 20px 15px 20px;
+  padding: 20px 15px 15px 15px;
 }
 .tm-win {
   color: #289c5c;
@@ -208,7 +198,7 @@ header .uk-logo {
 }
 ol.tm-ordered-list {
   margin: 0;
-  padding: 12px 5px 20px 30px;
+  padding: 10px 0 20px 30px;
 }
 ol.tm-ordered-list > li {
   position: relative;
@@ -248,11 +238,9 @@ ol.tm-ordered-list > li span {
   text-decoration: none;
 }
 .tm-left-panel > div {
-  width: 285px;
   max-width: 285px;
 }
 .tm-right-panel > div {
-  width: 183px;
   max-width: 183px;
 }
 .tm-nav {
@@ -307,8 +295,7 @@ ol.tm-ordered-list > li span {
 }
 .tm-game-my {
   position: relative;
-  padding: 0 20px;
-  line-height: 41px;
+  padding: 15px;
   border: none;
   border-top: 1px solid #323e59;
   background-color: rgba(71, 86, 121, 0.5);
@@ -338,8 +325,7 @@ ol.tm-ordered-list > li span {
 }
 .tm-game-played {
   position: relative;
-  padding: 0 20px;
-  line-height: 44px;
+  padding: 15px;
   border: none;
   border-top: 1px solid #323e59;
   background-color: rgba(71, 86, 121, 0.5);
@@ -353,7 +339,7 @@ ol.tm-ordered-list > li span {
   margin: 0;
 }
 .tm-members-list li {
-  padding: 0 20px;
+  padding: 0 15px;
   line-height: 44px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -370,8 +356,7 @@ ol.tm-ordered-list > li span {
 }
 .tm-players-list li {
   position: relative;
-  padding: 0 10px 0 40px;
-  line-height: 40px;
+  padding: 10px 10px 10px 40px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -386,7 +371,7 @@ ol.tm-ordered-list > li span {
 .tm-players-list li::before {
   display: block;
   position: absolute;
-  top: 0;
+  top: 10px;
   line-height: inherit;
   font-family: FontAwesome;
   font-size: 21px;
