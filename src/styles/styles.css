@@ -750,6 +750,9 @@ a.tm-create:hover {
 .tm-button-group button:focus {
   outline: none;
 }
+.uk-offcanvas-bar {
+  background-color: #475679;
+}
 @media (max-width: 1199px) {
   .tm-input-footer {
     width: 240px;
