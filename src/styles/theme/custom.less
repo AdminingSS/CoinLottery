@@ -28,6 +28,12 @@
     color: @font-color-global;
     content: "\F2DA";
   }
+
+  &.fa-sun-o:before {
+    content: "\F32B";
+    font-size: 22px;
+    color: @bg-global-primary;
+  }
 }
 
 .tm-padding-small-bottom {
@@ -134,7 +140,7 @@ ol.tm-ordered-list {
 .tm-button-new {
   text-transform: none;
   font-size: 15px;
-  padding: 0 25px;
+  padding: 0 15px;
   line-height: 38px;
 }
 
@@ -652,5 +658,45 @@ a.tm-create {
   &.uk-open {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.tm-button-group {
+  //width: 53px;
+  background-color: #182541;
+  //height: 27px;
+  //line-height: 25px;
+  border: none;
+  border-radius: 50px;
+  padding: 2px;
+
+  button {
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    border: none;
+    //font-size: 22px;
+    //color: #475679;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+
+    .fa {
+      font-size: 22px;
+      color: #475679;
+    }
+
+    &:hover, &.uk-active {
+      background-color: @bg-button-primary;
+      color: @font-color-global;
+
+      .fa-sun-o:before, .fa:before {
+        color: @font-color-global;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 }
