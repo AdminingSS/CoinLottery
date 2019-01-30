@@ -469,7 +469,8 @@ ol.tm-ordered-list {
     &:before, &:after {
       position: absolute;
       display: block;
-      top: -1px;
+      top: 50%;
+      transform: translateY(-50%);
       font-family: FontAwesome;
       color: @font-color-default;
     }
