@@ -623,6 +623,7 @@ a.tm-create {
 }
 
 .tm-dropdown-button {
+  max-width: 23px;
   position: relative;
   height: 27px;
   line-height: 25px;
@@ -733,6 +734,15 @@ a.tm-create {
 @media (max-width: 639px) {
   .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
     min-height: 40px;
+  }
+
+  .uk-navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .uk-navbar-left {
+    flex-wrap: nowrap;
   }
 }
 

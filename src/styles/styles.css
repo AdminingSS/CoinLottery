@@ -28,7 +28,7 @@ h1 {
   margin: 8px 0;
 }
 h2 {
-  font-size: 25px;
+  font-size: 24px;
   color: #ffffff;
 }
 h3 {
@@ -82,11 +82,13 @@ sup {
   padding-left: 20px;
   padding-right: 20px;
 }
-.uk-width-medium {
-  width: 305px;
-}
-.uk-width-small {
-  width: 205px;
+@media (min-width: 1200px) {
+  [class*=uk-width-medium] {
+    width: 305px;
+  }
+  [class*=uk-width-small] {
+    width: 205px;
+  }
 }
 .uk-background-primary {
   background-color: #475679;
@@ -292,6 +294,7 @@ ol.tm-ordered-list > li span {
 .tm-button-bet {
   text-transform: none;
   font-size: 19px;
+  white-space: normal;
 }
 .tm-social-icons > li {
   margin-right: 5px;
@@ -377,8 +380,11 @@ ol.tm-ordered-list > li span {
   border-top: 1px solid #475679;
   margin-top: 0;
 }
-.tm-side-limit > * {
-  max-width: 236px;
+@media (min-width: 960px) {
+  .tm-side-limit {
+    width: 256px;
+    max-width: 100%;
+  }
 }
 .tm-players-list {
   padding: 0;
@@ -565,7 +571,8 @@ ol.tm-ordered-list > li span {
 .tm-game-counter .tm-waiting-players:after {
   position: absolute;
   display: block;
-  top: -1px;
+  top: 50%;
+  transform: translateY(-50%);
   font-family: FontAwesome;
   color: #879ac2;
 }
@@ -628,6 +635,11 @@ ol.tm-ordered-list > li span {
 .tm-win-number:last-child {
   margin-right: 0;
 }
+@media (max-width: 639px) {
+  .tm-win-number {
+    font-size: 40px;
+  }
+}
 .tm-find-game,
 .tm-new-game {
   background-color: #289c5c;
@@ -682,6 +694,7 @@ a.tm-create:hover {
   text-decoration: underline;
 }
 .tm-dropdown-button {
+  max-width: 23px;
   position: relative;
   height: 27px;
   line-height: 25px;
@@ -770,6 +783,13 @@ a.tm-create:hover {
   .uk-navbar-nav > li > a,
   .uk-navbar-toggle {
     min-height: 40px;
+  }
+  .uk-navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .uk-navbar-left {
+    flex-wrap: nowrap;
   }
 }
 /*# sourceMappingURL=styles.css.map */
