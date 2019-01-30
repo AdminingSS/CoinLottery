@@ -139,6 +139,7 @@ ol.tm-ordered-list {
 .tm-button-bet {
   text-transform: none;
   font-size: 19px;
+  white-space: normal;
 }
 
 .tm-social-icons>li {
@@ -241,9 +242,14 @@ ol.tm-ordered-list {
   }
 }
 
-.tm-side-limit>* {
-  max-width: 236px;
+@media (min-width: 960px) {
+
+  .tm-side-limit {
+    width: 256px;
+    max-width: 100%;
+  }
 }
+
 
 .tm-players-list {
   padding: 0;
@@ -463,7 +469,8 @@ ol.tm-ordered-list {
     &:before, &:after {
       position: absolute;
       display: block;
-      top: -1px;
+      top: 50%;
+      transform: translateY(-50%);
       font-family: FontAwesome;
       color: @font-color-default;
     }
@@ -540,6 +547,13 @@ ol.tm-ordered-list {
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 639px) {
+
+  .tm-win-number {
+    font-size: 40px;
   }
 }
 
