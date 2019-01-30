@@ -176,12 +176,11 @@ ol.tm-ordered-list {
 
 .tm-game-my {
   position: relative;
-  padding: 15px;
-  //line-height: 41px;
+  padding: 0 20px;
+  line-height: 40px;
   border: none;
   border-top: 1px solid @bg-global-tertiary;
   background-color: @bg-global-muted;
-  //border-left: 3px solid transparent;
   cursor: pointer;
 
   &:before {
@@ -196,7 +195,6 @@ ol.tm-ordered-list {
 
   &:hover, &:focus, &:active {
     background-color: @bg-global-primary;
-    //border-left-color: @bg-button-primary;
 
     &:before {
       background-color: @bg-button-primary;
@@ -210,12 +208,11 @@ ol.tm-ordered-list {
 
 .tm-game-played {
   position: relative;
-  padding: 15px;
-  //line-height: 44px;
+  padding: 0 20px;
+  line-height: 40px;
   border: none;
   border-top: 1px solid @bg-global-tertiary;
   background-color: @bg-global-muted;
-  //border-left: 3px solid transparent;
   cursor: pointer;
 
   &:nth-child(2) {
@@ -229,7 +226,7 @@ ol.tm-ordered-list {
 
   li {
     padding: 0 20px;
-    line-height: 44px;
+    line-height: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -248,12 +245,11 @@ ol.tm-ordered-list {
 
   li {
     position: relative;
-    padding: 10px 10px 10px 40px;
-    //line-height: 40px;
+    padding: 0 10px 0 40px;
+    line-height: 40px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    //border-top: 5px solid @bg-global-tertiary;
     margin-top: 5px;
 
     &.tm-not-connected {
@@ -389,7 +385,8 @@ ol.tm-ordered-list {
 }
 
 .tm-game-available {
-  padding: 10px;
+  padding: 0 10px;
+  line-height: 40px;
 
   .uk-button {
     line-height: 22px;
@@ -405,7 +402,7 @@ ol.tm-ordered-list {
   &:before {
     position: absolute;
     display: block;
-    top: -5px;
+    top: 0;
     left: 0;
     line-height: inherit;
     font-family: FontAwesome;
