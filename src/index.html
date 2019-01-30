@@ -40,8 +40,17 @@
                             <!--logo-->
                             <a class="uk-navbar-item uk-logo" href="/">Coin<span>Lottery</span></a>
 
+                            <div class="uk-navbar-item">
+                                <div class="tm-dropdown-button"><img src="/images/flag-ru.png" alt=""></div>
+                                    <div class="tm-dropdown" uk-dropdown="mode: click">
+                                        <a href="#"><img src="/images/flag-ru.png" alt=""></a>
+                                        <a href="#"><img src="/images/flag-ru.png" alt=""></a>
+                                    </div>
+                            </div>
+
+
                             <!--navbar menu-->
-                            <ul class="uk-navbar-nav uk-margin-large-left uk-visible@m">
+                            <ul class="uk-navbar-nav uk-margin-auto-left uk-visible@m">
                                 <li class="tm-nav"><a href="#">Все игры</a></li>
                                 <li class="tm-nav"><a href="#">Мои игры</a></li>
                                 <li class="tm-nav"><a href="#">Смартконтакт</a></li>
@@ -51,6 +60,15 @@
                         </div>
 
                         <div class="uk-navbar-right">
+
+                            <div class="uk-button-group">
+                                <button>
+                                    <i class="fa fa-moon-o"></i>
+                                </button>
+                                <button>
+                                    <img src="/images/icon-sun.svg" alt="">
+                                </button>
+                            </div>
 
                             <!--new-->
                             <div class="">
@@ -67,7 +85,7 @@
             <!-- Section -->
             <div class="uk-section">
                 <div class="uk-container">
-                    <div class="uk-grid-small uk-child-width-expand" uk-grid>
+                    <div class="uk-grid-small uk-child-width-expand@l" uk-grid>
                         <div class="tm-left-panel tm-child-margin-bottom uk-width-auto">
                             <div class="tm-statistic uk-background-secondary">
                                 <div class="tm-background-tertiary tm-block-padding">
@@ -356,12 +374,12 @@
                                             <div class="tm-padding-small-bottom uk-flex uk-flex-between uk-flex-middle">
                                                 <div class="uk-flex uk-flex-middle">
                                                     <h5>ставка</h5>
-                                                    <div class="uk-margin-left">0.0569 <span class="uk-text-uppercase">eth</span>
+                                                    <div class="uk-margin-small-left">0.0569 <span class="uk-text-uppercase">eth</span>
                                                     </div>
                                                 </div>
                                                 <div class="uk-flex uk-flex-middle">
                                                     <h5 class="uk-margin-auto-left">Макс выигрыш</h5>
-                                                    <div class="uk-margin-left">2.0569 <span class="uk-text-uppercase">eth</span>
+                                                    <div class="uk-margin-small-left">2.0569 <span class="uk-text-uppercase">eth</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -406,18 +424,18 @@
                                                     <div><h3>Ваша ставка:</h3></div>
                                                     <div><h5>Выберите цифру (0-9)</h5></div>
                                                 </div>
-                                                <div>
-                                                    <ul class="uk-pagination uk-flex-between">
-                                                        <li class="tm-paginator-button uk-button">0</li>
-                                                        <li class="tm-paginator-button uk-button uk-active">1</li>
-                                                        <li class="tm-paginator-button uk-button">2</li>
-                                                        <li class="tm-paginator-button uk-button">3</li>
-                                                        <li class="tm-paginator-button uk-button">4</li>
-                                                        <li class="tm-paginator-button uk-button">5</li>
-                                                        <li class="tm-paginator-button uk-button">6</li>
-                                                        <li class="tm-paginator-button uk-button">7</li>
-                                                        <li class="tm-paginator-button uk-button">8</li>
-                                                        <li class="tm-paginator-button uk-button">9</li>
+                                                <div class="uk-flex uk-flex-center">
+                                                    <ul class="uk-pagination uk-width-auto">
+                                                        <li><a href="">0</a></li>
+                                                        <li class="uk-active"><a href="">1</a></li>
+                                                        <li><a href="">2</a></li>
+                                                        <li><a href="">3</a></li>
+                                                        <li><a href="">4</a></li>
+                                                        <li><a href="">5</a></li>
+                                                        <li><a href="">6</a></li>
+                                                        <li><a href="">7</a></li>
+                                                        <li><a href="">8</a></li>
+                                                        <li><a href="">9</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="tm-padding-small-vertical uk-flex uk-flex-between uk-padding-remove-horizontal">
@@ -1009,22 +1027,25 @@
         <!--Footer-->
         <footer class="tm-background-tertiary">
             <div class="uk-container">
-                <nav class="" uk-navbar>
-                    <div class="uk-navbar-left">
-
+                <nav class="uk-flex uk-flex-middle uk-flex-between">
+                    <div class="uk-width-auto">
                         <!--logo-->
                         <a class="uk-navbar-item uk-logo" href="/">Coin<span>Lottery</span></a>
                     </div>
 
-                    <div class="uk-navbar-center">
-                        <h5>Реферальная ссылка</h5>
-                        <div>
-                            <input class="tm-input-footer" type="text" value="https://www.google.com/search?safe1321321321">
+                    <div class="uk-flex uk-flex-middle uk-flex-center uk-width-expand">
+                        <div class="uk-width-auto">
+                            <h5>Реферальная ссылка</h5>
                         </div>
-                        <button class="tm-button-footer uk-button uk-button-default">Копировать</button>
+                        <div class="uk-margin-small-left uk-margin-small-right uk-width-auto">
+                            <input class="tm-input-footer" type="text" value="https://www.google.com/search?safe1321321321" readonly>
+                        </div>
+                        <div class="uk-width-auto">
+                            <button class="tm-button-footer uk-button uk-button-default">Копировать</button>
+                        </div>
                     </div>
 
-                    <div class="uk-navbar-right">
+                    <div class="uk-width-auto">
 
                         <!--navbar menu-->
                         <ul class="uk-navbar-nav uk-visible@m tm-social-icons">

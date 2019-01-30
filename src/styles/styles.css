@@ -109,7 +109,7 @@ h6 {
   color: #ffffff;
 }
 .uk-pagination {
-  margin: 0;
+  margin: auto;
 }
 .uk-navbar-item,
 .uk-navbar-nav > li > a,
@@ -244,7 +244,7 @@ ol.tm-ordered-list > li span {
   max-width: 183px;
 }
 .tm-nav {
-  border: 5px solid transparent;
+  border-top: 5px solid transparent;
 }
 .tm-nav:hover,
 .tm-nav:active,
@@ -267,13 +267,15 @@ ol.tm-ordered-list > li span {
   text-transform: none;
   font-size: 19px;
 }
+.tm-social-icons > li {
+  margin-right: 5px;
+}
 .tm-social-icons > li > a {
   width: 35px;
   height: 35px;
   min-height: 35px;
   border-radius: 50%;
   background-color: transparent;
-  margin-right: 5px;
   border: 2px solid #475679;
 }
 .tm-social-icons > li > a .fa {
@@ -537,25 +539,32 @@ ol.tm-ordered-list > li span {
 .tm-game-action {
   padding: 25px 20px 20px;
 }
-.tm-game-action .tm-paginator-button {
+.tm-game-action .uk-pagination li {
   width: 34px;
   height: 35px;
   line-height: 35px;
   background: #192745;
   padding: 0;
-  margin: 0 2px 0 0;
+  margin: 0 2px 2px 0;
   border-radius: 3px;
+  text-align: center;
+}
+.tm-game-action .uk-pagination li a {
   color: #ffffff;
 }
-.tm-game-action .tm-paginator-button:last-child {
-  margin: 0;
-}
-.tm-game-action .tm-paginator-button.uk-active,
-.tm-game-action .tm-paginator-button:hover {
+.tm-game-action .uk-pagination li.uk-active,
+.tm-game-action .uk-pagination li:hover {
   background-color: #289c5c;
 }
 .tm-input-footer {
-  width: 100%;
+  width: 380px;
+  height: 27px;
+  line-height: 27px;
+  padding: 0 10px;
+  background-color: #223952;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
 }
 .tm-button-footer {
   height: 27px;
@@ -628,5 +637,41 @@ a.tm-create {
 }
 a.tm-create:hover {
   text-decoration: none;
+}
+.tm-dropdown-button {
+  position: relative;
+  height: 27px;
+  line-height: 25px;
+  background-color: #182541;
+  border-radius: 50px;
+  padding: 0 30px 0 2px;
+  cursor: pointer;
+}
+.tm-dropdown-button:before {
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 8px;
+  font-family: FontAwesome;
+  font-size: 12px;
+  color: #475679;
+  content: '\F078';
+}
+.tm-dropdown.uk-dropdown {
+  min-width: 0;
+  padding: 2px;
+  background: #182541;
+  margin: 5px 0 0;
+  border-radius: 50px;
+}
+.tm-dropdown.uk-dropdown > * {
+  margin-bottom: 2px;
+}
+.tm-dropdown.uk-dropdown > *:last-child {
+  margin-bottom: 0;
+}
+.tm-dropdown.uk-dropdown.uk-open {
+  display: flex;
+  flex-direction: column;
 }
 /*# sourceMappingURL=styles.css.map */
