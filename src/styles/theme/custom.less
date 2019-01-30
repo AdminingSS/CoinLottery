@@ -263,7 +263,7 @@ ol.tm-ordered-list {
     &::before {
       display: block;
       position: absolute;
-      top: 10px;
+      top: 0;
       line-height: inherit;
       font-family: FontAwesome;
       font-size: 21px;
@@ -301,6 +301,7 @@ ol.tm-ordered-list {
     border: 1px solid @bg-global-tertiary;
     text-align: center;
     line-height: 23px;
+    box-sizing: border-box;
   }
 }
 
@@ -413,7 +414,7 @@ ol.tm-ordered-list {
 }
 
 .tm-game-counter {
-  padding: 28px;
+  padding: 25px 30px;
   margin-bottom: 5px;
 
   .tm-slidebar {
@@ -463,17 +464,17 @@ ol.tm-ordered-list {
 }
 
 .tm-game-action {
-  padding: 25px 20px 20px;
+  padding: 20px;
 
   .uk-pagination li {
-    width: 34px;
-    height: 35px;
+    width: 33px;
+    height: 34px;
     line-height: 35px;
     background: #192745;
     padding: 0;
     margin: 0 2px 2px 0;
     border-radius: 3px;
-
+    font-size: 22px;
     text-align: center;
 
     a {
@@ -517,7 +518,7 @@ ol.tm-ordered-list {
   background-color: #192745;
   border: 3px solid @bg-button-primary;
   border-radius: 10px;
-
+  box-sizing: border-box;
   font-size: 61px;
 
   &:last-child {
