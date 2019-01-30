@@ -1,9 +1,5 @@
 //Global
 
-.tm-child-margin-bottom>* {
-  margin-bottom: 20px;
-}
-
 .tm-la {
   font-family: LineAwesome;
   color: @font-color-default;
@@ -44,10 +40,10 @@
 }
 
 .tm-block-padding {
-  padding: 10px 15px;
+  padding: 10px 20px;
 
   &-large {
-    padding: 20px 15px 15px 15px;
+    padding: 15px 20px;
   }
 }
 
@@ -60,15 +56,15 @@
 }
 
 ol.tm-ordered-list {
-  margin: 0;
-  padding: 10px 0 20px 30px;
+  padding: 0;
 
   > li {
     position: relative;
     list-style-type:none;
     counter-increment: list;
-    margin-bottom: 25px;
-    padding-left: 10px;
+    min-height: 27px;
+    margin-bottom: 10px;
+    padding-left: 40px;
     font-size: @font-size-large;
 
     &:last-child {
@@ -78,7 +74,7 @@ ol.tm-ordered-list {
     &:before {
       position: absolute;
       top: -4px;
-      left: -30px;
+      left: 0;
       content: counter(list) " ";
       width: 27px;
       height: 27px;
@@ -95,7 +91,6 @@ ol.tm-ordered-list {
 }
 
 .tm-block-footer {
-  min-height: 59px;
   padding: 15px 0 0;
   border-top: 1px solid rgba(135,154,194,0.2);
 
@@ -108,17 +103,11 @@ ol.tm-ordered-list {
   }
 }
 
+.tm-help-link {
+
+}
+
 //Local
-
-.tm-left-panel>div {
-  //width: 285px;
-  max-width:285px;
-}
-
-.tm-right-panel>div {
-  //width: 183px;
-  max-width: 183px;
-}
 
 .tm-nav {
   border-top: 5px solid transparent;
@@ -242,26 +231,13 @@ ol.tm-ordered-list {
   margin: 0;
 
   li {
-    //position: relative;
-    padding: 0 15px;
+    padding: 0 20px;
     line-height: 44px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     border-top: 1px solid @bg-global-primary;
     margin-top: 0;
-
-    //&::before {
-    //  display: block;
-    //  position: absolute;
-    //  top: 0;
-    //  line-height: inherit;
-    //  font-family: FontAwesome;
-    //  font-size: 14px;
-    //  color: @font-color-default;
-    //  content: "\f091";
-    //  left: 20px;
-    //}
   }
 }
 
