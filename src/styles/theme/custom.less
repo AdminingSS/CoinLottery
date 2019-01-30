@@ -244,6 +244,7 @@ ol.tm-ordered-list {
   margin: 0;
 
   li {
+    background-color: @bg-global-muted;
     position: relative;
     padding: 0 10px 0 40px;
     line-height: 40px;
@@ -251,19 +252,17 @@ ol.tm-ordered-list {
     text-overflow: ellipsis;
     white-space: nowrap;
     margin-top: 5px;
+    color: @font-color-default;
 
-    &.tm-not-connected {
-      color: @font-color-default;
-
-      &:before {
-        color: @font-color-default;
-      }
+    &.tm-connected {
+      background-color: @bg-global-primary;
+      color: @font-color-global;
     }
 
     &::before {
       display: block;
       position: absolute;
-      top: 10px;
+      top: 0;
       line-height: inherit;
       font-family: FontAwesome;
       font-size: 21px;
