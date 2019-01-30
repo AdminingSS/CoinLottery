@@ -51,6 +51,9 @@ h6 {
   color: rgba(255, 255, 255, 0.5);
   text-transform: uppercase;
 }
+input {
+  font-family: 'Roboto', sans-serif;
+}
 .tm-background-tertiary {
   background-color: #323e59;
 }
@@ -198,6 +201,11 @@ header .uk-logo {
   content: "\F32B";
   font-size: 22px;
   color: #475679;
+}
+.tm-la.fa-info:before {
+  content: "\F24A";
+  color: #ffffff;
+  font-size: 16px;
 }
 .tm-padding-small-bottom {
   padding-bottom: 10px;
@@ -421,6 +429,7 @@ ol.tm-ordered-list > li span {
   border: 1px solid #323e59;
   text-align: center;
   line-height: 23px;
+  box-sizing: border-box;
 }
 .tm-games-available a:hover {
   text-decoration: none;
@@ -433,13 +442,13 @@ ol.tm-ordered-list > li span {
   background-color: #192745;
   border: 1px solid transparent;
   border-radius: 3px;
-  line-height: 20px;
-  max-height: 19px;
+  line-height: 22px;
+  max-height: 22px;
   outline: none;
 }
 .tm-games-available .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #919bb1;
-  line-height: 20px;
+  line-height: 22px;
   text-transform: uppercase;
 }
 .tm-games-available .select2-container {
@@ -473,6 +482,12 @@ ol.tm-ordered-list > li span {
 .tm-games-available .tm-select:last-child {
   margin-right: 0;
 }
+.select2-results__option {
+  padding: 0 8px;
+  user-select: none;
+  -webkit-user-select: none;
+  line-height: 23px;
+}
 .select2-dropdown {
   border: 1px solid #192745;
   border-radius: 3px;
@@ -486,13 +501,17 @@ ol.tm-ordered-list > li span {
   background-color: #4266b5;
   color: white;
 }
+.select2-container--default .select2-results__option[aria-disabled=true] {
+  color: #919bb1;
+  text-transform: uppercase;
+}
 .tm-game-available {
   padding: 0 10px;
   line-height: 40px;
 }
 .tm-game-available .uk-button {
   line-height: 22px;
-  padding: 0 15px 0 10px;
+  padding: 0 10px;
 }
 .tm-icon {
   position: relative;
@@ -511,7 +530,7 @@ ol.tm-ordered-list > li span {
   content: "\F369";
 }
 .tm-game-counter {
-  padding: 28px;
+  padding: 25px 30px;
   margin-bottom: 5px;
 }
 .tm-game-counter .tm-slidebar {
@@ -555,16 +574,17 @@ ol.tm-ordered-list > li span {
   right: 0;
 }
 .tm-game-action {
-  padding: 25px 20px 20px;
+  padding: 20px;
 }
 .tm-game-action .uk-pagination li {
-  width: 34px;
-  height: 35px;
+  width: 33px;
+  height: 34px;
   line-height: 35px;
   background: #192745;
   padding: 0;
   margin: 0 2px 2px 0;
   border-radius: 3px;
+  font-size: 22px;
   text-align: center;
 }
 .tm-game-action .uk-pagination li a {
@@ -598,6 +618,7 @@ ol.tm-ordered-list > li span {
   background-color: #192745;
   border: 3px solid #289c5c;
   border-radius: 10px;
+  box-sizing: border-box;
   font-size: 61px;
 }
 .tm-win-number:last-child {
@@ -654,7 +675,7 @@ a.tm-create {
   color: #289c5c;
 }
 a.tm-create:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .tm-dropdown-button {
   position: relative;

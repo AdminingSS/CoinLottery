@@ -30,6 +30,12 @@
     font-size: 22px;
     color: @bg-global-primary;
   }
+
+  &.fa-info:before {
+    content: "\F24A";
+    color: @font-color-global;
+    font-size: 16px;
+  }
 }
 
 .tm-padding-small-bottom {
@@ -319,14 +325,14 @@ ol.tm-ordered-list {
     background-color: #192745;
     border: 1px solid transparent;
     border-radius: 3px;
-    line-height: 20px;
-    max-height: 19px;
+    line-height: 22px;
+    max-height: 22px;
     outline: none;
   }
 
   .select2-container--default .select2-selection--single .select2-selection__rendered {
     color: #919bb1;
-    line-height: 20px;
+    line-height: 22px;
     text-transform: uppercase;
   }
 
@@ -368,6 +374,13 @@ ol.tm-ordered-list {
   }
 }
 
+.select2-results__option {
+  padding: 0 8px;
+  user-select: none;
+  -webkit-user-select: none;
+  line-height: 23px;
+}
+
 .select2-dropdown {
   border: 1px solid #192745;
   border-radius: 3px;
@@ -384,13 +397,18 @@ ol.tm-ordered-list {
   color: white;
 }
 
+.select2-container--default .select2-results__option[aria-disabled=true] {
+  color: #919bb1;
+  text-transform: uppercase;
+}
+
 .tm-game-available {
   padding: 0 10px;
   line-height: 40px;
 
   .uk-button {
     line-height: 22px;
-    padding: 0 15px 0 10px;
+    padding: 0 10px;
   }
 }
 
@@ -586,7 +604,7 @@ a.tm-create {
   color: @font-color-primary;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
