@@ -24,13 +24,16 @@
   padding-right: 20px;
 }
 
-.uk-width-medium {
-  width: 305px;
+@media (min-width: 1200px) {
+  [class*=uk-width-medium]{
+    width: 305px;
+  }
+
+  [class*=uk-width-small] {
+    width: 205px;
+  }
 }
 
-.uk-width-small {
-  width: 205px;
-}
 
 //Backgrounds
 
