@@ -5,7 +5,7 @@ html {
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: cover;
-  background-color: #475679;
+  background-color: #1e2237;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.2;
@@ -44,7 +44,7 @@ h5,
 .uk-h5 {
   font-size: 14px;
   text-transform: uppercase;
-  color: #879ac2;
+  color: #979FC3;
 }
 h6 {
   font-size: 12px;
@@ -59,7 +59,7 @@ sup {
   font-size: 60%;
 }
 .tm-background-tertiary {
-  background-color: #323e59;
+  background-color: #131625;
 }
 .uk-h1,
 .uk-h2,
@@ -91,10 +91,10 @@ sup {
   }
 }
 .uk-background-primary {
-  background-color: #475679;
+  background-color: #1e2237;
 }
 .uk-background-secondary {
-  background-color: #3d4a69;
+  background-color: #171b2b;
 }
 .uk-background-default {
   background-color: transparent;
@@ -110,24 +110,24 @@ sup {
   white-space: nowrap;
 }
 .uk-button-primary {
-  background-color: #289c5c;
+  background-color: #357CE1;
 }
 .uk-button-primary:hover,
 .uk-button-primary:focus,
 .uk-button-primary:active {
-  background-color: #134b2c;
+  background-color: #174d99;
 }
 .uk-button-secondary {
-  background-color: #be663a;
+  background-color: #d74e5a;
 }
 .uk-button-secondary:hover,
 .uk-button-secondary:focus,
 .uk-button-secondary:active {
-  background-color: #703c22;
+  background-color: #9c232e;
 }
 .uk-button-default {
-  background-color: #475679;
-  color: #ffffff;
+  background-color: transparent;
+  color: #979FC3;
 }
 .uk-button-default:hover,
 .uk-button-default:focus,
@@ -143,7 +143,7 @@ sup {
 .uk-navbar-toggle {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #ffffff;
+  color: #979FC3;
   text-transform: none;
 }
 .uk-navbar-item:hover,
@@ -160,7 +160,7 @@ sup {
 .uk-navbar-item .fa,
 .uk-navbar-nav > li > a .fa,
 .uk-navbar-toggle .fa {
-  color: #879ac2;
+  color: #979FC3;
   font-size: 24px;
 }
 .uk-logo {
@@ -175,7 +175,7 @@ sup {
   color: #ffffff;
 }
 .uk-logo span {
-  color: #289c5c;
+  color: #357CE1;
 }
 header .uk-logo {
   font-size: 35px;
@@ -198,7 +198,7 @@ header .uk-logo {
 }
 .tm-la {
   font-family: LineAwesome;
-  color: #879ac2;
+  color: #357CE1;
 }
 .tm-la.fa-pie-chart:before {
   font-size: 28px;
@@ -211,16 +211,16 @@ header .uk-logo {
 .tm-la.fa-comments:before {
   font-size: 28px;
   content: "\F1A1";
+  color: #979FC3;
 }
 .tm-la.fa-reply:before {
   font-size: 17px;
-  color: #ffffff;
   content: "\F2DA";
 }
 .tm-la.fa-sun-o:before {
   content: "\F32B";
   font-size: 22px;
-  color: #475679;
+  color: #979FC3;
 }
 .tm-la.fa-info:before {
   content: "\F24A";
@@ -240,10 +240,10 @@ header .uk-logo {
   padding: 15px 20px;
 }
 .tm-win {
-  color: #289c5c;
+  color: #2fb363;
 }
 .tm-lose {
-  color: #be663a;
+  color: #d74e5a;
 }
 ol.tm-ordered-list {
   padding: 0;
@@ -268,7 +268,7 @@ ol.tm-ordered-list > li:before {
   width: 27px;
   height: 27px;
   line-height: 28px;
-  background-color: #289c5c;
+  background-color: #357CE1;
   border-radius: 50%;
   text-align: center;
 }
@@ -277,10 +277,13 @@ ol.tm-ordered-list > li span {
 }
 .tm-block-footer {
   padding: 15px 0 0;
-  border-top: 1px solid rgba(135, 154, 194, 0.2);
+  border-top: 1px solid #383f66;
 }
 .tm-block-footer a {
   color: #ffffff;
+}
+.tm-block-footer a.tm-link-alt {
+  color: #357CE1;
 }
 .tm-block-footer a:hover {
   text-decoration: none;
@@ -291,19 +294,22 @@ ol.tm-ordered-list > li span {
 .tm-nav:hover,
 .tm-nav:active,
 .tm-nav.uk-active {
-  border-top-color: #289c5c;
+  border-top-color: #357CE1;
 }
 .tm-text-alt {
   color: #5b6c92;
 }
 .tm-background-central-head {
-  background-color: #289c5c;
+  background-color: #357CE1;
 }
 .tm-button-new {
   text-transform: none;
   font-size: 15px;
   padding: 0 15px;
   line-height: 38px;
+  background-color: transparent;
+  border: 1px solid #357CE1;
+  color: #979FC3;
 }
 .tm-button-bet {
   text-transform: none;
@@ -319,33 +325,32 @@ ol.tm-ordered-list > li span {
   min-height: 35px;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px solid #475679;
+  border: 2px solid #1e2237;
 }
 .tm-social-icons > li > a .fa {
   font-size: 17px;
-  color: #ffffff;
 }
 .tm-statistic {
   font-size: 26px;
 }
 .tm-statistic > div:last-child {
-  border-top: 1px solid #475679;
+  border-top: 1px solid #383f66;
 }
 .tm-games-my a:hover {
   text-decoration: none;
 }
 .tm-games-my .fa {
   font-size: 17px;
-  color: #879ac2;
+  color: #979FC3;
 }
 .tm-game-my {
   position: relative;
   padding: 0 20px;
   line-height: 40px;
   border: none;
-  border-top: 1px solid #323e59;
-  background-color: rgba(71, 86, 121, 0.5);
+  border-top: 1px solid #383f66;
   cursor: pointer;
+  color: #979FC3;
 }
 .tm-game-my:before {
   position: absolute;
@@ -359,12 +364,12 @@ ol.tm-ordered-list > li span {
 .tm-game-my:hover,
 .tm-game-my:focus,
 .tm-game-my:active {
-  background-color: #475679;
+  background-color: #1e2237;
 }
 .tm-game-my:hover:before,
 .tm-game-my:focus:before,
 .tm-game-my:active:before {
-  background-color: #289c5c;
+  background-color: #357CE1;
 }
 .tm-game-my:nth-child(2) {
   border-top: none;
@@ -374,9 +379,9 @@ ol.tm-ordered-list > li span {
   padding: 0 20px;
   line-height: 40px;
   border: none;
-  border-top: 1px solid #323e59;
-  background-color: rgba(71, 86, 121, 0.5);
+  border-top: 1px solid #383f66;
   cursor: pointer;
+  color: #979FC3;
 }
 .tm-game-played:nth-child(2) {
   border-top: none;
@@ -391,11 +396,12 @@ ol.tm-ordered-list > li span {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-top: 1px solid #475679;
+  border-top: 1px solid #383f66;
   margin-top: 0;
+  color: #979FC3;
 }
 .tm-members-list li a {
-  color: #ffffff;
+  color: #979FC3;
 }
 .tm-members-list li a:hover,
 .tm-members-list li a:focus {
@@ -412,22 +418,23 @@ ol.tm-ordered-list > li span {
   margin: 0;
 }
 .tm-players-list li {
-  background-color: rgba(71, 86, 121, 0.5);
+  background-color: transparent;
   position: relative;
   padding: 0 10px 0 40px;
-  line-height: 40px;
+  line-height: 38px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-top: 5px;
-  color: #879ac2;
+  color: rgba(151, 159, 195, 0.5);
+  border: 1px solid #383f66;
 }
 .tm-players-list li.tm-connected {
-  background-color: #475679;
-  color: #ffffff;
+  background-color: #1e2237;
+  color: #979FC3;
 }
 .tm-players-list li.tm-connected a {
-  color: #ffffff;
+  color: #979FC3;
 }
 .tm-players-list li.tm-connected a:hover,
 .tm-players-list li.tm-connected a:focus,
@@ -442,7 +449,7 @@ ol.tm-ordered-list > li span {
   line-height: inherit;
   font-family: FontAwesome;
   font-size: 21px;
-  color: #879ac2;
+  color: #357CE1;
   content: "\f364";
   left: 10px;
 }
@@ -456,33 +463,34 @@ ol.tm-ordered-list > li span {
   bottom: 0;
   left: 0;
   width: 3px;
-  background-color: #289c5c;
+  background-color: #357CE1;
   content: '';
 }
 .tm-players-list li.uk-active .tm-players-count {
-  background-color: #289c5c;
-  border-color: #289c5c;
+  background-color: #357CE1;
+  border-color: #357CE1;
 }
 .tm-players-list .tm-players-count {
   width: 23px;
   height: 23px;
-  border: 1px solid #323e59;
+  border: 1px solid #383f66;
   text-align: center;
   line-height: 23px;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
+  color: #ffffff;
 }
 .tm-games-available a:hover {
   text-decoration: none;
 }
 .tm-games-available .fa {
   font-size: 17px;
-  color: #879ac2;
+  color: #979FC3;
 }
 .tm-games-available .select2-container--default .select2-selection--single {
-  background-color: #192745;
-  border: 1px solid transparent;
+  background-color: transparent;
+  border: 1px solid #383f66;
   border-radius: 3px;
   line-height: 22px;
   max-height: 22px;
@@ -552,7 +560,9 @@ ol.tm-ordered-list > li span {
 }
 .tm-game-available {
   padding: 0 10px;
-  line-height: 40px;
+  line-height: 38px;
+  color: #979FC3;
+  border: 1px solid #383f66;
 }
 .tm-game-available .uk-button {
   line-height: 22px;
@@ -571,19 +581,20 @@ ol.tm-ordered-list > li span {
   line-height: inherit;
   font-family: FontAwesome;
   font-size: 21px;
-  color: #879ac2;
+  color: #357CE1;
   content: "\F369";
 }
 .tm-game-counter {
   padding: 25px 30px;
   margin-bottom: 5px;
+  border: 1px solid #383f66;
 }
 .tm-game-counter .tm-slidebar {
   position: relative;
   margin: 15px 0 25px;
   width: 100%;
   height: 9px;
-  background-color: #323e59;
+  background-color: #171b2b;
 }
 .tm-game-counter .tm-slidebar:before {
   position: absolute;
@@ -592,7 +603,7 @@ ol.tm-ordered-list > li span {
   bottom: 0;
   left: 35px;
   width: 60px;
-  background-color: #289c5c;
+  background-color: #357CE1;
   border-radius: 500px;
   content: '';
 }
@@ -600,7 +611,7 @@ ol.tm-ordered-list > li span {
   position: relative;
   padding: 0 25px;
   font-size: 20px;
-  color: #879ac2;
+  color: #979FC3;
 }
 .tm-game-counter .tm-waiting-players:before,
 .tm-game-counter .tm-waiting-players:after {
@@ -609,7 +620,7 @@ ol.tm-ordered-list > li span {
   top: 50%;
   transform: translateY(-50%);
   font-family: FontAwesome;
-  color: #879ac2;
+  color: #979FC3;
 }
 .tm-game-counter .tm-waiting-players:before {
   content: '\f100';
@@ -621,32 +632,35 @@ ol.tm-ordered-list > li span {
 }
 .tm-game-action {
   padding: 20px;
+  border: 1px solid #383f66;
 }
 .tm-game-action .uk-pagination li {
-  width: 33px;
+  width: 32px;
   height: 34px;
   line-height: 35px;
-  background: #192745;
+  background: transparent;
   padding: 0;
-  margin: 0 2px 2px 0;
+  margin: 0 1px 1px 0;
   border-radius: 3px;
   font-size: 22px;
   text-align: center;
+  border: 1px solid #383f66;
 }
 .tm-game-action .uk-pagination li a {
   color: #ffffff;
 }
 .tm-game-action .uk-pagination li.uk-active,
 .tm-game-action .uk-pagination li:hover {
-  background-color: #289c5c;
+  background-color: #357CE1;
+  border-color: #357CE1;
 }
 .tm-input-footer {
   width: 380px;
   height: 27px;
   line-height: 27px;
   padding: 0 10px;
-  background-color: #223952;
-  border: none;
+  background-color: transparent;
+  border: 1px solid #383f66;
   border-radius: 3px;
   color: #ffffff;
 }
@@ -654,7 +668,7 @@ ol.tm-ordered-list > li span {
   height: 27px;
   padding: 0 20px;
   line-height: 29px;
-  border: none;
+  border: 1px solid #357CE1;
 }
 .tm-win-number {
   width: 80px;
@@ -662,7 +676,7 @@ ol.tm-ordered-list > li span {
   line-height: 105px;
   margin-right: 4px;
   background-color: #192745;
-  border: 3px solid #289c5c;
+  border: 3px solid #357CE1;
   border-radius: 10px;
   box-sizing: border-box;
   font-size: 61px;
@@ -677,7 +691,7 @@ ol.tm-ordered-list > li span {
 }
 .tm-find-game,
 .tm-new-game {
-  background-color: #289c5c;
+  background-color: #357CE1;
   margin: 10px 0 20px;
   padding: 15px 15px 25px 20px;
   border-radius: 3px;
@@ -723,7 +737,7 @@ ol.tm-ordered-list > li span {
   color: #bbb;
 }
 a.tm-create {
-  color: #289c5c;
+  color: #357CE1;
 }
 a.tm-create:hover {
   text-decoration: underline;
@@ -786,7 +800,7 @@ a.tm-create:hover {
 }
 .tm-button-group button:hover,
 .tm-button-group button.uk-active {
-  background-color: #289c5c;
+  background-color: #357CE1;
   color: #ffffff;
 }
 .tm-button-group button:hover .fa-sun-o:before,
@@ -799,7 +813,7 @@ a.tm-create:hover {
   outline: none;
 }
 .uk-offcanvas-bar {
-  background-color: #475679;
+  background-color: #1e2237;
 }
 @media (max-width: 1199px) {
   .tm-input-footer {
