@@ -8,6 +8,7 @@ $(()=>{
 
         $select.select2({
             minimumResultsForSearch: Infinity,
+            width: 96
         });
     })();
 });

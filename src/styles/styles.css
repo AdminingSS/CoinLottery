@@ -394,6 +394,13 @@ ol.tm-ordered-list > li span {
   border-top: 1px solid #475679;
   margin-top: 0;
 }
+.tm-members-list li a {
+  color: #ffffff;
+}
+.tm-members-list li a:hover,
+.tm-members-list li a:focus {
+  text-decoration: none;
+}
 @media (min-width: 960px) {
   .tm-side-limit {
     width: 256px;
@@ -418,6 +425,15 @@ ol.tm-ordered-list > li span {
 .tm-players-list li.tm-connected {
   background-color: #475679;
   color: #ffffff;
+}
+.tm-players-list li.tm-connected a {
+  color: #ffffff;
+}
+.tm-players-list li.tm-connected a:hover,
+.tm-players-list li.tm-connected a:focus,
+.tm-players-list li.tm-connected a:active,
+.tm-players-list li.tm-connected a.uk-active {
+  text-decoration: none;
 }
 .tm-players-list li::before {
   display: block;
@@ -454,6 +470,8 @@ ol.tm-ordered-list > li span {
   text-align: center;
   line-height: 23px;
   box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
 }
 .tm-games-available a:hover {
   text-decoration: none;
@@ -469,6 +487,7 @@ ol.tm-ordered-list > li span {
   line-height: 22px;
   max-height: 22px;
   outline: none;
+  z-index: 2000;
 }
 .tm-games-available .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #919bb1;
@@ -502,6 +521,7 @@ ol.tm-ordered-list > li span {
 .tm-games-available .tm-select {
   width: 96px;
   margin-right: 5px;
+  z-index: 3000;
 }
 .tm-games-available .tm-select:last-child {
   margin-right: 0;
@@ -515,6 +535,7 @@ ol.tm-ordered-list > li span {
 .select2-dropdown {
   border: 1px solid #192745;
   border-radius: 3px;
+  width: 96px;
 }
 .select2-results {
   display: block;

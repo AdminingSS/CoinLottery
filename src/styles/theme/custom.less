@@ -239,6 +239,14 @@ ol.tm-ordered-list {
     white-space: nowrap;
     border-top: 1px solid @bg-global-primary;
     margin-top: 0;
+
+    a {
+      color: @font-color-global;
+
+      &:hover, &:focus {
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -269,6 +277,14 @@ ol.tm-ordered-list {
     &.tm-connected {
       background-color: @bg-global-primary;
       color: @font-color-global;
+
+      a {
+        color: @font-color-global;
+
+        &:hover, &:focus, &:active, &.uk-active {
+          text-decoration: none;
+        }
+      }
     }
 
     &::before {
@@ -313,6 +329,8 @@ ol.tm-ordered-list {
     text-align: center;
     line-height: 23px;
     box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
@@ -334,6 +352,7 @@ ol.tm-ordered-list {
     line-height: 22px;
     max-height: 22px;
     outline: none;
+    z-index: 2000;
   }
 
   .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -373,6 +392,7 @@ ol.tm-ordered-list {
   .tm-select {
     width: 96px;
     margin-right: 5px;
+    z-index: 3000;
 
     &:last-child {
       margin-right: 0;
@@ -390,6 +410,7 @@ ol.tm-ordered-list {
 .select2-dropdown {
   border: 1px solid #192745;
   border-radius: 3px;
+  width: 96px;
 }
 
 .select2-results {
