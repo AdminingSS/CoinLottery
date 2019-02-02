@@ -1,0 +1,56 @@
+.tm-select {
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .select-wrapper {
+    width: 96px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    .select-trigger {
+      background: transparent;
+      border: 1px solid @border-color;
+      height: 20px;
+      border-radius: 3px;
+      line-height: 22px;
+      padding: 0 10px;
+      color: @font-color-default;
+
+      position: relative;
+
+      &:before {
+        line-height: 22px;
+        position: absolute;
+        top: -3px;
+        right: 5px;
+        font-family: FontAwesome;
+        font-size: 10px;
+        content: '\f078';
+      }
+    }
+
+    .select-dropdown {
+      background: @bg-global-tertiary;
+      width: 96px;
+      min-width: 96px;
+      border: 1px solid @border-color;
+      border-radius: 3px;
+      margin: 0;
+      padding: 0 10px;
+      line-height: 22px;
+      color: @font-color-default;
+
+      .select-option {
+        height: 20px;
+        border-radius: 3px;
+
+        .option-disabled {
+          color: @font-color-muted;
+        }
+      }
+    }
+  }
+}
