@@ -360,6 +360,11 @@ ol.tm-ordered-list > li span {
   font-size: 19px;
   white-space: normal;
 }
+.tm-button-bet.uk-button-default {
+  background-color: #171b2b;
+  border-color: #171b2b;
+  color: #ffffff;
+}
 .tm-social-icons > li {
   margin-right: 5px;
 }
@@ -477,6 +482,13 @@ ol.tm-ordered-list > li span {
   background-color: #1e2237;
   color: #979FC3;
 }
+.tm-players-list li.tm-connected.tm-inprogress a {
+  color: rgba(151, 159, 195, 0.5);
+}
+.tm-players-list li.tm-connected.tm-inprogress .tm-players-count {
+  border: 1px solid #383f66;
+  background-color: transparent;
+}
 .tm-players-list li.tm-connected a {
   color: #979FC3;
 }
@@ -515,11 +527,11 @@ ol.tm-ordered-list > li span {
   border-color: #357CE1;
 }
 .tm-players-list .tm-players-count {
-  width: 23px;
+  width: 24px;
   height: 23px;
   border: 1px solid #383f66;
   text-align: center;
-  line-height: 23px;
+  line-height: 21px;
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
@@ -657,6 +669,16 @@ ol.tm-ordered-list > li span {
 }
 .tm-win-number:last-child {
   margin-right: 0;
+}
+.tm-install-metamask {
+  font-size: 16px;
+  padding: 50px 30px;
+}
+.tm-install-metamask .uk-button {
+  font-size: 12px;
+  padding: 0 30px;
+  color: #ffffff;
+  line-height: 30px;
 }
 @media (max-width: 639px) {
   .tm-win-number {

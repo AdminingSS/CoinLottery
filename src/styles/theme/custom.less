@@ -148,6 +148,12 @@ ol.tm-ordered-list {
   text-transform: none;
   font-size: 19px;
   white-space: normal;
+
+  &.uk-button-default {
+    background-color: @bg-global-secondary;
+    border-color: @bg-global-secondary;
+    color: @font-color-global;
+  }
 }
 
 .tm-social-icons>li {
@@ -290,6 +296,17 @@ ol.tm-ordered-list {
       background-color: @bg-global-primary;
       color: @font-color-default;
 
+      &.tm-inprogress  {
+        a {
+          color: rgba(151, 159, 195, 0.5);
+        }
+
+        .tm-players-count {
+          border: 1px solid @border-color;
+          background-color: transparent;
+        }
+      }
+
       a {
         color: @font-color-default;
 
@@ -335,11 +352,11 @@ ol.tm-ordered-list {
   }
 
   .tm-players-count {
-    width: 23px;
+    width: 24px;
     height: 23px;
     border: 1px solid @border-color;
     text-align: center;
-    line-height: 23px;
+    line-height: 21px;
     box-sizing: border-box;
     display: inline-block;
     vertical-align: middle;
@@ -505,6 +522,18 @@ ol.tm-ordered-list {
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.tm-install-metamask {
+  font-size: 16px;
+  padding: 50px 30px;
+
+  .uk-button {
+    font-size: 12px;
+    padding: 0 30px;
+    color: @font-color-global;
+    line-height: 30px;
   }
 }
 
