@@ -266,16 +266,46 @@
                                                 </div>
                                                 <div class="uk-flex uk-flex-center">
                                                     <ul class="uk-pagination uk-width-auto">
-                                                        <li><a href="">0</a></li>
-                                                        <li class="uk-active"><a href="">1</a></li>
-                                                        <li><a href="">2</a></li>
-                                                        <li><a href="">3</a></li>
-                                                        <li><a href="">4</a></li>
-                                                        <li><a href="">5</a></li>
-                                                        <li><a href="">6</a></li>
-                                                        <li><a href="">7</a></li>
-                                                        <li><a href="">8</a></li>
-                                                        <li><a href="">9</a></li>
+                                                        <li>
+                                                            <a href="">0</a>
+                                                            <span class="tm-other-bet">3</span>
+                                                        </li>
+                                                        <li class="uk-active">
+                                                            <a href="">1</a>
+                                                            <span class="tm-other-bet">1</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">2</a>
+                                                            <span class="tm-other-bet">1</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">3</a>
+                                                            <span class="tm-other-bet"></span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">4</a>
+                                                            <span class="tm-other-bet">4</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">5</a>
+                                                            <span class="tm-other-bet"></span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">6</a>
+                                                            <span class="tm-other-bet"></span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">7</a>
+                                                            <span class="tm-other-bet"></span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">8</a>
+                                                            <span class="tm-other-bet">2</span>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">9</a>
+                                                            <span class="tm-other-bet"></span>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <div class="tm-padding-small-vertical uk-child-width-auto@s uk-grid-small uk-flex-between uk-padding-remove-horizontal" uk-grid>
@@ -288,7 +318,7 @@
                                                         <div>1,95 <span class="uk-text-uppercase">eth</span></div>
                                                     </div>
                                                 </div>
-                                                <button class="uk-hidden tm-button-bet uk-button uk-button-primary uk-width-expand">
+                                                <button class="tm-button-bet uk-button uk-button-primary uk-width-expand">
                                                     Сделать ставку
                                                 </button>
                                             </div>
@@ -1734,25 +1764,49 @@
                                     </div>
 
                                     <div class="tm-new-game">
-                                        <div class="uk-child-width-1-4@s uk-grid-small uk-flex-bottom uk-flex-between" uk-grid>
+                                        <h2>Новая игра</h2>
+                                        <div class="uk-grid-small uk-grid-match" uk-grid>
                                             <div class="uk-width-1-4@m">
-                                                <h2>Новая игра</h2>
-                                            </div>
-                                            <div>
-                                                <h6>Игроки</h6>
-                                                <div>
-                                                    <input type="text" placeholder="10">
+                                                <div class="tm-new-game-left uk-grid-small" uk-grid uk-margin>
+                                                    <div class="uk-width-1-2@s uk-width-1-1@m">
+                                                        <h4>Игроки</h4>
+                                                        <div>
+                                                            <input type="text" placeholder="10">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-1-2@s uk-width-1-1@m">
+                                                        <h4>Ставка eth</h4>
+                                                        <div>
+                                                            <input type="text" placeholder="0,0569">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div>
-                                                <h6>Ставка eth</h6>
-                                                <div>
-                                                    <input type="text" placeholder="0,0569">
-                                                </div>
-                                            </div>
 
-                                            <div class="uk-width-auto uk-flex uk-flex-right">
-                                                <button class="tm-button-new-game uk-button">Создать</button>
+                                            </div>
+                                            <div class="uk-width-expand@m">
+                                                <div class="tm-new-game-right">
+                                                    <div class="uk-child-width-1-2@s uk-grid-small uk-margin-small-bottom" uk-grid>
+                                                        <div><h4>Ваша ставка:</h4></div>
+                                                        <div><h5>Выберите цифру (0-9)</h5></div>
+                                                    </div>
+                                                    <div class="uk-flex uk-flex-center">
+                                                        <ul class="uk-pagination uk-width-auto">
+                                                            <li><a href="">0</a></li>
+                                                            <li class="uk-active"><a href="">1</a></li>
+                                                            <li><a href="">2</a></li>
+                                                            <li><a href="">3</a></li>
+                                                            <li><a href="">4</a></li>
+                                                            <li class="uk-active"><a href="">5</a></li>
+                                                            <li><a href="">6</a></li>
+                                                            <li><a href="">7</a></li>
+                                                            <li><a href="">8</a></li>
+                                                            <li><a href="">9</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <button class="tm-button-new-game uk-button uk-width-expand uk-margin-small-top">
+                                                        Создать игру
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

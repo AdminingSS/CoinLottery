@@ -621,6 +621,7 @@ ol.tm-ordered-list > li span {
   border: 1px solid #383f66;
 }
 .tm-game-action .uk-pagination li {
+  position: relative;
   width: 32px;
   height: 34px;
   line-height: 35px;
@@ -634,6 +635,15 @@ ol.tm-ordered-list > li span {
 }
 .tm-game-action .uk-pagination li a {
   color: #ffffff;
+}
+.tm-game-action .uk-pagination li .tm-other-bet {
+  position: absolute;
+  display: block;
+  bottom: 1px;
+  right: 2px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  line-height: 10px;
 }
 .tm-game-action .uk-pagination li.uk-active,
 .tm-game-action .uk-pagination li:hover {
@@ -680,11 +690,6 @@ ol.tm-ordered-list > li span {
   color: #ffffff;
   line-height: 30px;
 }
-@media (max-width: 639px) {
-  .tm-win-number {
-    font-size: 40px;
-  }
-}
 .tm-find-game,
 .tm-new-game {
   background-color: #357CE1;
@@ -706,6 +711,62 @@ ol.tm-ordered-list > li span {
   color: rgba(25, 38, 67, 0.5);
   font-size: 12px;
 }
+.tm-new-game h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 10px;
+}
+.tm-new-game h5 {
+  color: rgba(255, 255, 255, 0.5);
+}
+.tm-new-game .tm-new-game-left {
+  padding: 20px 0 0 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+.tm-new-game .tm-new-game-right {
+  padding: 20px 0 0 0;
+}
+@media (max-width: 959px) {
+  .tm-new-game .tm-new-game-right {
+    padding: 0;
+  }
+  .tm-new-game .tm-new-game-left {
+    border-right: none;
+  }
+}
+.tm-new-game .uk-pagination li {
+  position: relative;
+  width: 32px;
+  height: 34px;
+  line-height: 35px;
+  background: #fff;
+  padding: 0;
+  margin: 0 1px 1px 0;
+  border-radius: 3px;
+  font-size: 22px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.tm-new-game .uk-pagination li a {
+  color: #000;
+}
+.tm-new-game .uk-pagination li .tm-other-bet {
+  position: absolute;
+  display: block;
+  bottom: 1px;
+  right: 2px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+  line-height: 10px;
+}
+.tm-new-game .uk-pagination li.uk-active,
+.tm-new-game .uk-pagination li:hover {
+  background-color: #3d4a69;
+  border-color: #3d4a69;
+}
+.tm-new-game .uk-pagination li.uk-active a,
+.tm-new-game .uk-pagination li:hover a {
+  color: #fff;
+}
 .tm-new-game input {
   background-color: #ffffff;
   width: 120px;
@@ -714,23 +775,23 @@ ol.tm-ordered-list > li span {
   border-radius: 3px;
   text-align: center;
   font-size: 12px;
-  color: rgba(25, 38, 67, 0.5);
+  color: #000;
 }
 .tm-new-game input::placeholder {
   color: rgba(25, 38, 67, 0.5);
   font-size: 12px;
 }
 .tm-button-new-game {
-  height: 29px;
-  line-height: 29px;
-  padding: 0 35px;
+  height: 49px;
+  line-height: 49px;
+  padding: 0;
   background-color: transparent;
   border: 1px solid #fff;
+  font-size: 19px;
 }
 .tm-button-new-game:hover,
 .tm-button-new-game:active {
-  border-color: #bbb;
-  color: #bbb;
+  border-color: #141624;
 }
 a.tm-create {
   color: #357CE1;
@@ -810,6 +871,11 @@ a.tm-create:hover {
 }
 .uk-offcanvas-bar {
   background-color: #1e2237;
+}
+@media (max-width: 639px) {
+  .tm-win-number {
+    font-size: 40px;
+  }
 }
 @media (max-width: 1199px) {
   .tm-input-footer {
