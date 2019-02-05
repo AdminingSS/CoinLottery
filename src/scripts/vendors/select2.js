@@ -4,11 +4,11 @@ import 'select2/dist/css/select2.min.css';
 $(()=>{
     //simple select
     (() => {
-        //const $select = $('select');
+        const $select = $('select');
 
-        //$select.select2({
-        //    minimumResultsForSearch: Infinity,
-        //    width: 96
-        //});
+        $select.select2({
+           minimumResultsForSearch: Infinity,
+           width: 96
+        });
     })();
 });
