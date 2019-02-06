@@ -20,9 +20,9 @@ $(()=>{
                     $select.text(optionText);
                     $input.val($target.attr('data-value'));
 
-                    $select.trigger('click');
+                    //$select.trigger('click');
                     //$dropdown.hide();
-                    //UIkit.dropdown($dropdown).hide();
+                    UIkit.dropdown($dropdown).hide();
                 }
             });
         })
