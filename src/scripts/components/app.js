@@ -1,4 +1,4 @@
-$(()=>{
+$(() => {
 
     //select
     (() => {
@@ -13,17 +13,14 @@ $(()=>{
             $dropdown.on('click', '.select-option', event, function () {
                 const $target = $(event.target);
 
-                if($target.attr('data-value')){
-                    if($target.attr('data-value') === "") return false;
-                    const optionText = $target.text();
+                if (!$target.attr('data-value')) return false;
 
-                    $select.text(optionText);
-                    $input.val($target.attr('data-value'));
+                const optionText = $target.text();
 
-                    //$select.trigger('click');
-                    //$dropdown.hide();
-                    UIkit.dropdown($dropdown).hide();
-                }
+                $select.text(optionText);
+                $input.val($target.attr('data-value'));
+
+                UIkit.dropdown($dropdown).hide();
             });
         })
     })();
